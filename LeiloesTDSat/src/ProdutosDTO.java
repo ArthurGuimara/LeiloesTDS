@@ -11,7 +11,7 @@ public class ProdutosDTO {
     private Integer id;
     private String nome;
     private Integer valor;
-    private String status;
+private String status;
 
     public Integer getId() {
         return id;
