@@ -9,8 +9,8 @@ public class conectaDAO {
         Connection conn = null;
 
         try {
-            // URL de conexão com o banco de dados (usando a porta 3306)
-            String url = "jdbc:mysql://localhost:3306/uc11?user=root&password=root";
+            // URL de conexão com o banco de dados (desativando SSL)
+            String url = "jdbc:mysql://localhost:3306/uc11?user=root&password=root&useSSL=false";
             conn = DriverManager.getConnection(url);
 
             JOptionPane.showMessageDialog(null, "Conexão com o banco de dados estabelecida com sucesso!");
